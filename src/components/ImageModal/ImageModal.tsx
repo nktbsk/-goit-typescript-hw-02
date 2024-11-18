@@ -6,7 +6,7 @@ Modal.setAppElement("#root");
 interface Image {
   id: string;
   urls: {
-    regular: string;  
+    small: string;  
   };
   alt_description: string;  
 }
@@ -30,7 +30,7 @@ const ImageModal = ({ isOpen, onRequestClose, image }: Props): JSX.Element => {
         &times;
       </button>
       <img
-        src={image.urls.regular}
+        src={image.urls.small}
         alt={image.alt_description}
         className={styles.modalImage}
       />
